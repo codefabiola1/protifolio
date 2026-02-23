@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f2f2f2;
+}
+
+.top{
+    background:#022827;
+    color:white;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.top1{
+    display:flex;
+    align-items:center;
+}
+
+.top1 img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+.nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:10px;
+    font-size:14px;
+}
+
+.main{
+    max-width:1000px;
+    margin:30px auto;
+    padding:10px;
+}
+
+h1{
+    text-align:center;
+    color:#022827;
+    margin-bottom:30px;
+}
+
+.project-card{
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0px 2px 8px rgba(0,0,0,0.1);
+    margin-bottom:20px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-start;
+    gap:15px;
+}
+
+.project-card img{
+    width:200px;
+    height:150px;
+    border-radius:8px;
+    object-fit:cover;
+}
+
+.project-info{
+    flex:1;
+}
+
+.project-info h3{
+    color:#006666;
+    margin-bottom:8px;
+}
+
+.project-info p{
+    font-size:14px;
+    color:#333;
+    margin:4px 0;
+}
+
+.project-info a{
+    display:inline-block;
+    margin-top:8px;
+    padding:6px 12px;
+    background:lightblue;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-size:13px;
+}
+
+.end{
+    background:#022827;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+.menu-toggle{
+    display:none;
+    font-size:26px;
+    cursor:pointer;
+}
+
+@media(max-width:800px){
+    .main{
+        flex-direction:column;
+    }
+    .nav{
+        display:none;
+        flex-direction:column;
+        background:pink;
+        position:absolute;
+        top:60px;
+        right:0;
+        width:200px;
+        padding:10px;
+        border-radius:5px;
+    }
+    .nav a{
+        margin:8px 0;
+    }
+    .menu-toggle{
+        display:block;
+        color:white;
+    }
+}
+</style>
+
+<body>
+
+
+<div class="main">
+
+    <h1>My Projects</h1>
+
+    <div class="project-card">
+        
+        <div class="project-info">
+            <h3>Buy and Sell App</h3>
+            <p><strong>Problem Solved:</strong> Guests can easyly see available rooms and book ones which meets their financial status.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, PHP, MYSQL</p>
+            <a href="https://christellauwishaste_hash.github.io/Hotel-Room-BookingApp/" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        
+        <div class="project-info">
+            <h3>Todo List App</h3>
+            <p><strong>Problem Solved:</strong> Help users manage daily tasks with add, edit, and delete functions.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <a href="https://christellauwishaste_hash.github.io/Todo-App/" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+
+    <div class="project-card">
+        
+        <div class="project-info">
+            <h3>Interactive Calculator</h3>
+            <p><strong>Problem Solved:</strong> Provide a tool for users to perform basic calculations online.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <a href="#" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="end">
+    © 2026 Tumukunde isimbi fabiola
+</div>
+<script>
+    const menuBtn = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+menuBtn.addEventListener("click", function(){
+    if(navMenu.style.display === "flex"){
+        navMenu.style.display = "none";
+    } else {
+        navMenu.style.display = "flex";
+    }
+});
+</script>
+</body>
+</html>
